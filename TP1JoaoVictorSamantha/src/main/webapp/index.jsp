@@ -31,7 +31,7 @@
   <h1> Formulário HTML js</h1> 
   <h2> Preencha o formulário abaixo</h2><br />
 
-<form oninput="x.value=parseInt(a.value)" action="/TheServlet1" method="post">
+<form oninput="x.value=parseInt(a.value)" action="TheServlet1" method="post">
 
 <!-- DADOS PESSOAIS-->
 <fieldset>
