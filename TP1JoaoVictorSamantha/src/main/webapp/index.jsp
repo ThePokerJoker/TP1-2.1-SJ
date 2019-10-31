@@ -28,8 +28,9 @@
  </head>
 
  <body>
-  <h1> Formulário HTML js</h1> 
-  <h2> Preencha o formulário abaixo</h2><br />
+     <%@include file="WEB-INF/jspf/MenuSuperior.jspf" %>
+  <h2> Formulário HTML js</h2> 
+  <h3> Preencha o formulário abaixo</h3><br />
 
 <form oninput="x.value=parseInt(a.value)" action="TheServlet1" method="post">
 
