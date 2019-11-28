@@ -40,13 +40,21 @@ public class TheServlet1 extends HttpServlet {
         System.out.println("Nome completo: "+nomeCompleto);
         String senha = request.getParameter("senha");
         
+        String docCpf = request.getParameter("docCpf");
+        
+        int conversao = Integer.parseInt(docCpf);
+        
         Usuario user = new Usuario();
         user.setNome(nomeCompleto);
         user.setSenha(senha);
         
+        
+                
         Double aleatorio = Math.random();
         BigDecimal id = new BigDecimal(aleatorio);
         user.setIdUsuario(id);
+        
+        
         
         Session sessaoBD = HibernateUtil.getSession();
         Transaction tr = sessaoBD.beginTransaction();
