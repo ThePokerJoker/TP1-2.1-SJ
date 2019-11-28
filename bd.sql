@@ -23,3 +23,8 @@ ALTER TABLE public.usuario
 CREATE SEQUENCE public.sq_usuario;
 ALTER TABLE public.sq_usuario
   OWNER TO postgres;
+
+ALTER TABLE public.usuario
+   ADD COLUMN end_municipio character varying(50);
+ALTER TABLE public.usuario
+   ADD COLUMN end_cep numeric(8,0);

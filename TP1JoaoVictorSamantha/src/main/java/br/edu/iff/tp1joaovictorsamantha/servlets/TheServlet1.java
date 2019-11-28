@@ -44,6 +44,12 @@ public class TheServlet1 extends HttpServlet {
         
         int conversao = Integer.parseInt(docCpf);
         
+        String endMunicipio =request.getParameter("endMunicpio");
+        
+       String endCep = request.getParameter("endCep");
+       
+       int convert =Integer.parseint(endCep);
+                
         Usuario user = new Usuario();
         user.setNome(nomeCompleto);
         user.setSenha(senha);

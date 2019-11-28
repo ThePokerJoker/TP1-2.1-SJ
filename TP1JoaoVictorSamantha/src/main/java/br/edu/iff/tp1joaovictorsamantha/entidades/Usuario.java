@@ -125,7 +125,22 @@ public class Usuario implements Serializable {
     }
 
     public void setDocCpf(Long docCpf) {
-        this.docCpf = docCpf;
+        this.docCpf = docCpf;       
     }
     
-}
+    public String getEndMunicipio() {
+        return endMunicipio;
+    }
+    public void setEndMunicipio(String endMunicipio) {
+        this.endMunicipio = endMunicipio;
+    }
+    
+    public String getEndCep() {
+        return endCep;
+    }
+    
+    public void setEndCep(String endCep) {
+        this.endCep=endCep;
+    }
+ }
+    
